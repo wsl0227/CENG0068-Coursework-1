@@ -1,45 +1,141 @@
-Gas Turbine Emissions – Multivariate Data Analysis
+<div align="center">
 
-A Python-based exploratory analysis of gas turbine operating conditions and CO/NOₓ emissions, developed for CENG0068 – Fundamentals of Data Science at University College London (UCL).
+Gas Turbine Emissions Analysis
+
+Multivariate Statistical Analysis of Operating Conditions and CO/NOₓ Emissions
+
+CENG0068 · Fundamentals of Data Science · UCL
+
+
+
+
+
+Exploring relationships between turbine operating conditions and pollutant emissions through statistical analysis and dimensionality reduction.
+
+</div>
+
+Overview
+
+This project investigates the relationships between ambient conditions, gas turbine operating parameters, and CO/NOₓ emissions using exploratory multivariate statistical methods.
+
+The analysis focuses on variable correlations, potential outliers, information redundancy, and principal component analysis (PCA).
 
 Dataset
 
-Source: UCI Machine Learning Repository
+Property
 
-Dataset: Gas Turbine CO and NOx Emission Data Set
+Description
 
-Period: 2011–2015
+Source
 
-Observations: 36,733
+UCI Machine Learning Repository
 
-Variables: 11 numerical parameters covering ambient conditions, turbine operation and pollutant concentrations.
+Dataset
 
-UCI Dataset
+Gas Turbine CO and NOx Emission Data Set
 
-Methods
+Period
 
-Data preprocessing and outlier identification (IQR)
+2011–2015
 
-Boxplots and scatter matrix
+Observations
 
-Pearson correlation analysis
+36,733
 
-Data standardisation
+Variables
 
-Principal Component Analysis (PCA)
+11 numerical parameters
 
-Scree plot, PCA scores and eigenvector analysis
+Categories
+
+Ambient, Operating, Emissions
+
+Dataset DOI: https://doi.org/10.24432/C5WC95
+
+Analysis Workflow
+
+Data Collection → Preprocessing → Visualisation → Correlation Analysis → PCA → Interpretation
+
+The project includes:
+
+Boxplots and IQR-based outlier identification
+
+Scatter matrix for pairwise relationships
+
+Pearson correlation heatmap
+
+Standardisation and principal component analysis
+
+PCA scree plot, scores and eigenvector interpretation
 
 Key Findings
 
-Strong correlations exist among turbine operating parameters, particularly pressure and energy yield.
+Analysis
 
-CO concentration is negatively correlated with turbine inlet temperature (r = −0.706).
+Result
 
-NOₓ concentration shows its strongest individual correlation with ambient temperature (r = −0.558).
+CDP vs TEY
 
-The first three principal components explain 77.35% of the total standardised variance.
+r = 0.989
 
-Technologies
+TIT vs CO
+
+r = −0.706
+
+AT vs NOₓ
+
+r = −0.558
+
+PCA – First 2 Components
+
+67.90% explained variance
+
+PCA – First 3 Components
+
+77.35% explained variance
+
+The results reveal strong correlations among turbine operating parameters and distinct statistical associations for CO and NOₓ emissions.
+
+Visualisations
+
+The analysis produces five figures:
+
+Figure
+
+Description
+
+Figure 1
+
+Boxplots of 11 Variables
+
+Figure 2
+
+Scatter Matrix
+
+Figure 3
+
+Pearson Correlation Matrix
+
+Figure 4
+
+PCA Scree Plot
+
+Figure 5
+
+PCA Scores and Eigenvectors
+
+Tools and Libraries
 
 Python · NumPy · pandas · Matplotlib · Seaborn · scikit-learn
+
+Reference
+
+UCI Machine Learning Repository. Gas Turbine CO and NOx Emission Data Set (2019).
+
+DOI: https://doi.org/10.24432/C5WC95
+
+<div align="center">
+
+University College London · Fundamentals of Data Science
+
+</div>
